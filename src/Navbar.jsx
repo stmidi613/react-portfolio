@@ -1,14 +1,15 @@
 import React from "react";
-import { Fragment } from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "./Pictures/logo.png";
+import { NavLink } from 'react-router-dom';
+import './index.css'
 
 const navigation = [
-  { name: "Background", href: "#", current: true },
-  { name: "Projects", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
-  { name: "Resume", href: "#", current: false },
+  { name: "Background", href: "/", current: true },
+  { name: "Projects", href: "/projects", current: false },
+  { name: "Contact", href: "/contact", current: false },
+  { name: "Resume", href: "/resumes", current: false },
 ];
 
 function classNames(...classes) {
@@ -51,19 +52,20 @@ function Navbar() {
                 <div className="hidden sm:flex w-full justify-center items-center sm:pl-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <NavLink
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
+                      activeClassName="active"
                       className={classNames(
                         item.current
-                        ? "text-lightblue border-b-2"
+                        ? "text-lightblue"
                         : "text-lightblue hover:text-yellow",
                         "px-3 py-2 text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                         >
                         {item.name}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
@@ -74,20 +76,19 @@ function Navbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <NavLink
                 key={item.name}
-                as="a"
-                href={item.href}
+                to={item.href}
                 className={classNames(
                   item.current
-                  ? "text-lightblue underline"
+                  ? "text-lightblue"
                   : "text-lightblue hover:text-yellow",
-                  "block px-3 py-2 rounded-md text-base font-medium"
+                  "block px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                   >
                   {item.name}
-                </Disclosure.Button>
+                </NavLink>
               ))}
             </div>
           </Disclosure.Panel>
