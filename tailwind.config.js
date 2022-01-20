@@ -1,7 +1,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    colors: {
+      "darkblue": "#023047",
+      "teal": "#219EBC",
+      "lightblue": "#8ECAE6",
+      "yellow": "#FFB703",
+      "gold": "#F98300"
+    },
   },
   plugins: [],
 }
