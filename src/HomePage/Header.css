@@ -1,0 +1,51 @@
+#background-animation{
+    animation: background-animation 2s ease-in 1ms 1 normal forwards;
+}
+
+@keyframes background-animation {
+    0%{
+        background: #023047;
+    }
+    100%{
+        background: linear-gradient(267.35deg, #FB8500 0%, rgba(251, 133, 0, 0.75) 80.88%, #023047 100%, #284C3D 100%);
+    }
+}
+
+#name-animation {
+  animation: names 3s ease-in-out 1ms 1 normal forwards;
+}
+
+@keyframes names {
+  0% {
+    top: 33%;
+    left: -80px;
+    font-style: italic;
+  }
+  50% {
+    top: 33%;
+    left: 33%;
+    font-style: normal;
+  }
+  100% {
+    position: relative;
+    top: 33%;
+    left: 33%;
+    font-weight: bold;
+    color: #ffb703;
+  }
+}
+
+#text-animation {
+  animation: text-animation 3s ease-in-out 1ms 1 normal forwards;
+}
+
+@keyframes text-animation {
+    0%{
+        top: 300px;
+        opacity: 3%;
+    }
+    100%{
+        top: 160px;
+        opacity: 100%;
+    }
+}
