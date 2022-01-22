@@ -19,11 +19,11 @@ function displayProject(num) {
     document.getElementById(`sm-proj${num}`).style.borderColor = "#FFB703";
 }
 
-function Zoombox() {
+function PSZoombox() {
   return (
     <Fragment>
       <div>
-        <div className="pt-10 flex justify-center">
+        <div className="pt-8 flex justify-center">
           <img
             src={projects[0]}
             alt=""
@@ -67,7 +67,7 @@ function Zoombox() {
             className="w-10 m-2 border-2 proj6"
           />
         </div>
-        <div className="pb-10 pt-2 flex justify-center items-center">
+        <div className="pb-15 flex justify-center items-center">
           <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-3/5">
             <img
               src={projects[0]}
@@ -114,4 +114,4 @@ function Zoombox() {
   );
 }
 
-export default Zoombox;
+export default PSZoombox;

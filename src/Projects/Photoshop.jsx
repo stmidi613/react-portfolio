@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import "./Projects.css";
-import Zoombox from "./Zoombox";
+import PSZoombox from "./PSZoombox";
 
 
 function Photoshop() {
   return (
     <Fragment>
-      <div className="h-[825px] bg-lightblue sm:pt-10">
-        <h1 className="text-5xl text-yellow text-center p-10">Photoshop</h1>
+      <div className="h-[925px] sm:h-[825px] bg-lightblue md:pt-10">
+        <h1 className="text-3xl md:text-5xl text-yellow text-center p-5 md:p-10">Photoshop</h1>
         <div className="flex flex-row">
-          <div className="flex flex-col justify-around">
+          <div className="flex flex-row justify-center">
             <p className="mx-2 w-5/6">
               The picture in the top center is a description of the year 2020
               through my eyes. The rest of the works I have done are actually
@@ -21,7 +21,7 @@ function Photoshop() {
             </p>
           </div>
         </div>
-      <Zoombox />
+      <PSZoombox />
       </div>
     </Fragment>
   );
