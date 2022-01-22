@@ -19,7 +19,7 @@ function classNames(...classes) {
 function Navbar() {
   return (
     <>
-    <Disclosure as="nav" className="bg-darkblue md:fixed w-full z-10">
+    <Disclosure as="nav" className="bg-darkblue md:fixed w-full z-30">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

@@ -6,7 +6,7 @@ import Extras from "./Extras";
 function About() {
   return (
     <Fragment>
-      <div className="bg-lightblue md:h-[650px] flex flex-wrap flex-col sm:flex-row justify-around items-center p-4">
+      <div className="bg-lightblue h-[650px] lg:h-[500px] flex flex-wrap flex-col sm:flex-row justify-around items-center p-4">
         <div className="flex">
           <img
             src={about}
