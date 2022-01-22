@@ -7,6 +7,14 @@ import p1 from "./Pictures/p1.png";
 import p2 from "./Pictures/p2.png";
 import p3 from "./Pictures/p3.png";
 
+function zoomIn(){
+document.getElementById("flyerzoom").style.width = "500px"
+}
+
+function zoomOut(){
+  document.getElementById("flyerzoom").style.width = "32px"
+}
+
 function Photoshop() {
   return (
     <Fragment>
@@ -24,12 +32,12 @@ function Photoshop() {
               Elements projects I completed.
             </p>
             <div className="flex flex-wrap justify-between w-[500px]">
-              <img src={flyer} alt="" className="m-2 w-24 h-32" />
+              <img src={flyer} alt="" className="m-2 w-24 h-32" onMouseOver={zoomIn} onMouseLeave={zoomOut} />
               <img src={pic2} alt="" className="m-2 w-32 h-24" />
               <img src={p1} alt="" className="m-2 w-32 h-24" />
               <img src={pic1} alt="" className="m-2 w-24 h-32" />
               <img src={p2} alt="" className="m-2 w-32 h-24" />
-              <img src={p3} alt="" className="m-2 w-32 h-24" />
+              <img src={p3} alt="" id="flyer" className="m-2 w-32 h-24" />
             </div>
           </div>
           <div>
@@ -38,7 +46,7 @@ function Photoshop() {
               className="bg-[#E5E5E5] flex flex-wrap justify-center items-center mx-2 border-8 border-yellow rounded-md h-[625px] w-[865px]"
             >
               <div className="flex flex-wrap justify-between w-[500px]">
-                <img src={flyer} alt="" className="m-2 w-24 h-32" />
+                <img src={flyer} alt="" id="flyerzoom" className="m-2 w-24 h-32" />
                 <img src={pic2} alt="" className="m-2 w-32 h-24" />
                 <img src={p1} alt="" className="m-2 w-32 h-24" />
               </div>

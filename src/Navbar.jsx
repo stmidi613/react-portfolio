@@ -1,7 +1,7 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import logo from "./Pictures/logo.png";
+import logo from "./Pictures/portrait.png";
 import { NavLink } from 'react-router-dom';
 import './index.css'
 
@@ -19,7 +19,7 @@ function classNames(...classes) {
 function Navbar() {
   return (
     <>
-    <Disclosure as="nav" className="bg-darkblue">
+    <Disclosure as="nav" className="bg-darkblue md:fixed w-full z-10">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -38,16 +38,16 @@ function Navbar() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
-                    className="block lg:hidden h-8 w-auto"
+                    className="block lg:hidden h-10 w-auto"
                     src={logo}
                     alt="Workflow"
                     />
                   <img
-                    className="hidden lg:block h-8 w-auto"
+                    className="hidden lg:block h-10 w-auto"
                     src={logo}
                     alt="Workflow"
                     />
-                  <h3 className="pl-2 text-gold">Stephen Dilks</h3>
+                  <h3 className="pl-2 text-yellow">Stephen Dilks</h3>
                 </div>
                 <div className="hidden sm:flex w-full justify-center items-center sm:pl-6">
                   <div className="flex space-x-4">
@@ -55,10 +55,10 @@ function Navbar() {
                       <NavLink
                       key={item.name}
                       to={item.href}
-                      activeClassName="active"
+                      className="active"
                       className={classNames(
                         item.current
-                        ? "text-lightblue"
+                        ? "text-lightblue hover:text-yellow"
                         : "text-lightblue hover:text-yellow",
                         "px-3 py-2 text-sm font-medium"
                         )}
@@ -81,7 +81,7 @@ function Navbar() {
                 to={item.href}
                 className={classNames(
                   item.current
-                  ? "text-lightblue"
+                  ? "text-lightblue hover:text-yellow"
                   : "text-lightblue hover:text-yellow",
                   "block px-3 py-2 text-base font-medium"
                   )}
@@ -95,7 +95,6 @@ function Navbar() {
         </>
       )}
     </Disclosure>
-    <div className="h-2 bg-lightblue"></div>
   </>
   );
 }

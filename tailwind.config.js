@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       "darkblue": "#023047",
       "teal": "#219EBC",
-      "lightblue": "#8ECAE6",
+      "lightblue": "#D2F1FF",
       "yellow": "#FFB703",
       "gold": "#F98300",
       "white": "#fff"
