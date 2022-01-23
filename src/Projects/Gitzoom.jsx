@@ -52,7 +52,7 @@ function Gitzoom() {
           />
         </div>
         <div className="pb-15 flex justify-center items-center">
-          <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-3/5">
+          <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-[350px] sm:w-3/5">
             <img
               src={gitprojects[0]}
               alt=""
@@ -63,19 +63,19 @@ function Gitzoom() {
               src={gitprojects[1]}
               alt=""
               id="bg-gitproj1"
-              className="hide hidden relative w-full z-10"
+              className="hidden relative w-full z-10"
             />
             <img
               src={gitprojects[2]}
               alt=""
               id="bg-gitproj2"
-              className="hide hidden relative w-full"
+              className="hidden relative w-full"
             />
             <img
               src={gitprojects[3]}
               alt=""
               id="bg-gitproj3"
-              className="hide hidden relative w-full"
+              className="hidden relative w-full"
             />
           </div>
         </div>

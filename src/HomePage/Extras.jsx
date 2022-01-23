@@ -21,7 +21,7 @@ function Extras() {
           <div>
             <h2 className="mt-2 text-md sm:text-3xl text-yellow mb-4 m-6">Future Goals</h2>
 
-            <ol className="w-full flex flex-col flex-wrap text-sm sm:text-xl mx-9">
+            <ol className="w-full flex flex-col flex-wrap text-sm sm:text-xl mx-7">
               <li>• TypeScript</li>
               <li>• React Native</li>
               <li>• GraphQL</li>

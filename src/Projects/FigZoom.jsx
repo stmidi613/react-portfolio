@@ -53,7 +53,7 @@ function Figzoom() {
           />
         </div>
         <div className="pb-15 flex justify-center items-center">
-          <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-3/5">
+          <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-[350px] sm:w-3/5">
             <img
               src={figprojects[0]}
               alt=""
@@ -64,19 +64,19 @@ function Figzoom() {
               src={figprojects[1]}
               alt=""
               id="bg-figproj1"
-              className="hide hidden relative w-full z-10"
+              className="hidden relative w-full z-10"
             />
             <img
               src={figprojects[2]}
               alt=""
               id="bg-figproj2"
-              className="hide hidden relative w-full"
+              className="hidden relative w-full"
             />
             <img
               src={figprojects[3]}
               alt=""
               id="bg-figproj3"
-              className="hide hidden relative w-full"
+              className="hidden relative w-full"
             />
           </div>
         </div>
