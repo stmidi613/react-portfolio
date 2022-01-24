@@ -80,7 +80,7 @@ function PSZoombox() {
         <div className="pb-15 flex justify-center items-center">
           <div
             id="widebox"
-            className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-[350px] sm:w-3/5"
+            className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-full sm:w-3/5"
           >
             <img
               src={projects[0]}
