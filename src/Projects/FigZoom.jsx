@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import "./Projects.css";
-import figproj0 from "./Pictures/rocket.png";
-import figproj1 from "./Pictures/palehorse.png";
-import figproj2 from "./Pictures/kanjiux.png";
-import figproj3 from "./Pictures/kanjiui.png";
+import figproj0 from "./Pictures/rocketweb.png";
+import figproj1 from "./Pictures/phweb.png";
+import figproj2 from "./Pictures/kanjiapp.png";
+import figproj3 from "./Pictures/kanjiappui.png";
 
 const figprojects = [figproj0, figproj1, figproj2, figproj3];
 
@@ -62,32 +62,7 @@ function Figzoom() {
   return (
     <Fragment>
       <div className="flex flex-col lg:flex-row space-between w-screen">
-        <div className="text-white lg:pt-10 px-8 lg:px-0 lg:pl-16 flex-col justify-center items-center lg:w-1/3">
-          <div id="details-figproj0" className="block">
-            <p className="pb-2">{figdescr[0].title}</p>
-            <p className="pb-2">{figdescr[0].description}</p>
-            <p className="py-2">{figdescr[0].challenge}</p>
-            <p className="pt-2">{figdescr[0].solution}</p>
-          </div>
-          <div id="details-figproj1" className="hidden">
-            <p className="pb-2">{figdescr[1].title}</p>
-            <p className="pb-2">{figdescr[1].description}</p>
-            <p className="py-2">{figdescr[1].challenge}</p>
-            <p className="pt-2">{figdescr[1].solution}</p>
-          </div>
-          <div id="details-figproj2" className="hidden">
-            <p className="pb-2">{figdescr[2].title}</p>
-            <p className="pb-2">{figdescr[2].description}</p>
-            <p className="py-2">{figdescr[2].challenge}</p>
-            <p className="pt-2">{figdescr[2].solution}</p>
-          </div>
-          <div id="details-figproj3" className="hidden">
-            <p className="pb-2">{figdescr[3].title}</p>
-            <p className="pb-2">{figdescr[3].description}</p>
-            <p className="py-2">{figdescr[3].challenge}</p>
-            <p className="pt-2">{figdescr[3].solution}</p>
-          </div>
-        </div>
+        
         <div className="w-full">
           <div className="pt-8 lg:pt-0 flex justify-center">
             <img
@@ -119,8 +94,8 @@ function Figzoom() {
               className="w-10 m-2 border-2"
             />
           </div>
-          <div className="pb-15 flex justify-center items-center">
-            <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md w-full sm:w-4/5">
+          <div className="pb-10 flex justify-center items-center">
+            <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]">
               <img
                 src={figprojects[0]}
                 alt=""
@@ -148,6 +123,32 @@ function Figzoom() {
             </div>
           </div>
         </div>
+        <div className="text-white px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center lg:w-1/3">
+          <div id="details-figproj0" className="block">
+            <p className="pb-2">{figdescr[0].title}</p>
+            <p className="pb-2">{figdescr[0].description}</p>
+            <p className="py-2">{figdescr[0].challenge}</p>
+            <p className="pt-2">{figdescr[0].solution}</p>
+          </div>
+          <div id="details-figproj1" className="hidden">
+            <p className="pb-2">{figdescr[1].title}</p>
+            <p className="pb-2">{figdescr[1].description}</p>
+            <p className="py-2">{figdescr[1].challenge}</p>
+            <p className="pt-2">{figdescr[1].solution}</p>
+          </div>
+          <div id="details-figproj2" className="hidden">
+            <p className="pb-2">{figdescr[2].title}</p>
+            <p className="pb-2">{figdescr[2].description}</p>
+            <p className="py-2">{figdescr[2].challenge}</p>
+            <p className="pt-2">{figdescr[2].solution}</p>
+          </div>
+          <div id="details-figproj3" className="hidden">
+            <p className="pb-2">{figdescr[3].title}</p>
+            <p className="pb-2">{figdescr[3].description}</p>
+            <p className="py-2">{figdescr[3].challenge}</p>
+            <p className="pt-2">{figdescr[3].solution}</p>
+          </div>
+          </div>
       </div>
     </Fragment>
   );

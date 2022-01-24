@@ -4,7 +4,7 @@ import Figzoom from "./FigZoom";
 function Figma() {
   return (
     <Fragment>
-      <div className="h-[825px] bg-darkblue">
+      <div className="bg-darkblue">
         <h1 className="text-3xl md:text-5xl text-yellow text-center p-10">Figma</h1>
           <Figzoom />
       </div>

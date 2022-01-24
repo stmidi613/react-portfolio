@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import proj0 from "./Pictures/pic2.png";
-import proj1 from "./Pictures/p2.png";
-import proj2 from "./Pictures/p3.png";
-import proj3 from "./Pictures/p1.png";
-import proj4 from "./Pictures/pic.png";
-import proj5 from "./Pictures/flyer.png";
+import proj0 from "./Pictures/year2020.png";
+import proj1 from "./Pictures/pamphlet1.png";
+import proj2 from "./Pictures/pamphlet2.png";
+import proj3 from "./Pictures/pamphlet3.png";
+import proj4 from "./Pictures/dragon.png";
+import proj5 from "./Pictures/prayerflyer.png";
 import "./Projects.css";
 
 const projects = [proj0, proj1, proj2, proj3, proj4, proj5];
@@ -32,7 +32,7 @@ function displayProject(num) {
 function PSZoombox() {
   return (
     <Fragment>
-      <div>
+      <div className="pb-10">
         <div className="pt-8 flex justify-center">
           <img
             src={projects[0]}
@@ -80,7 +80,7 @@ function PSZoombox() {
         <div className="pb-15 flex justify-center items-center">
           <div
             id="widebox"
-            className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[425px] w-full sm:w-3/5"
+            className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
           >
             <img
               src={projects[0]}

@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import "./Projects.css";
-import gitproj0 from "./Pictures/rocketsite.png";
-import gitproj1 from "./Pictures/palehorse.png";
-import gitproj2 from "./Pictures/password.png";
-import gitproj3 from "./Pictures/bingo.png";
+import gitproj0 from "./Pictures/rocketweb.png";
+import gitproj1 from "./Pictures/phweb.png";
+import gitproj2 from "./Pictures/passwordapp.png";
+import gitproj3 from "./Pictures/bingoapp.png";
 
 const gitprojects = [gitproj0, gitproj1, gitproj2, gitproj3];
 
@@ -15,7 +15,7 @@ const gitdescr = [
     challenge:
       "Challenge:  Using only CSS and HTML while creating an engaging landging page.",
     solution:
-      "Solution:  I decided to use Bootstrap slideshow and interesting background pictures as well as a CSS hamburger menus popout menu."
+      "Solution:  I decided to use Bootstrap slideshow and interesting background pictures as well as a CSS hamburger menus popout menu.",
   },
   {
     title: "Pale Horse: Satire Writing",
@@ -68,34 +68,8 @@ function Figzoom() {
   return (
     <Fragment>
       <div className="flex flex-col lg:flex-row space-between w-screen">
-        <div className="lg:pt-10 px-8 lg:px-0 lg:pl-16 flex-col justify-center items-center lg:w-1/3">
-          <div id="details-gitproj0" className="block">
-            <p className="pb-2">{gitdescr[0].title}</p>
-            <p className="pb-2">{gitdescr[0].description}</p>
-            <p className="py-2">{gitdescr[0].challenge}</p>
-            <p className="pt-2">{gitdescr[0].solution}</p>
-          </div>
-          <div id="details-gitproj1" className="hidden">
-            <p className="pb-2">{gitdescr[1].title}</p>
-            <p className="pb-2">{gitdescr[1].description}</p>
-            <p className="py-2">{gitdescr[1].challenge}</p>
-            <p className="pt-2">{gitdescr[1].solution}</p>
-          </div>
-          <div id="details-gitproj2" className="hidden">
-            <p className="pb-2">{gitdescr[2].title}</p>
-            <p className="pb-2">{gitdescr[2].description}</p>
-            <p className="py-2">{gitdescr[2].challenge}</p>
-            <p className="pt-2">{gitdescr[2].solution}</p>
-          </div>
-          <div id="details-gitproj3" className="hidden">
-            <p className="pb-2">{gitdescr[3].title}</p>
-            <p className="pb-2">{gitdescr[3].description}</p>
-            <p className="py-2">{gitdescr[3].challenge}</p>
-            <p className="pt-2">{gitdescr[3].solution}</p>
-          </div>
-        </div>
         <div className="w-full">
-          <div className="pt-8 lg:pt-0 flex justify-center">
+          <div className="flex justify-center">
             <img
               src={gitprojects[0]}
               alt=""
@@ -125,10 +99,10 @@ function Figzoom() {
               className="w-10 m-2 border-2"
             />
           </div>
-          <div className="pb-15 flex justify-center items-center">
+          <div className="pb-10 flex justify-center items-center">
             <div
               id="git-widebox"
-              className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md w-full sm:w-4/5"
+              className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
               <img
                 src={gitprojects[0]}
@@ -142,24 +116,50 @@ function Figzoom() {
                 id="bg-gitproj1"
                 className="hidden relative w-full z-10"
               />
-              </div>
-              <div
-                id="git-smallbox"
-                className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-8 border-yellow rounded-md h-[425px] w-[300px]"
-              >
-                <img
-                  src={gitprojects[2]}
-                  alt=""
-                  id="bg-gitproj2"
-                  className="hidden relative w-full"
-                />
-                <img
-                  src={gitprojects[3]}
-                  alt=""
-                  id="bg-gitproj3"
-                  className="hidden relative w-full"
-                />
-              </div>
+            </div>
+            <div
+              id="git-smallbox"
+              className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-8 border-yellow rounded-md h-[425px] w-[300px]"
+            >
+              <img
+                src={gitprojects[2]}
+                alt=""
+                id="bg-gitproj2"
+                className="hidden relative w-full"
+              />
+              <img
+                src={gitprojects[3]}
+                alt=""
+                id="bg-gitproj3"
+                className="hidden relative w-full"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center lg:w-1/3">
+          <div id="details-gitproj0" className="block">
+            <p className="pb-2">{gitdescr[0].title}</p>
+            <p className="pb-2">{gitdescr[0].description}</p>
+            <p className="py-2">{gitdescr[0].challenge}</p>
+            <p className="pt-2">{gitdescr[0].solution}</p>
+          </div>
+          <div id="details-gitproj1" className="hidden">
+            <p className="pb-2">{gitdescr[1].title}</p>
+            <p className="pb-2">{gitdescr[1].description}</p>
+            <p className="py-2">{gitdescr[1].challenge}</p>
+            <p className="pt-2">{gitdescr[1].solution}</p>
+          </div>
+          <div id="details-gitproj2" className="hidden">
+            <p className="pb-2">{gitdescr[2].title}</p>
+            <p className="pb-2">{gitdescr[2].description}</p>
+            <p className="py-2">{gitdescr[2].challenge}</p>
+            <p className="pt-2">{gitdescr[2].solution}</p>
+          </div>
+          <div id="details-gitproj3" className="hidden">
+            <p className="pb-2">{gitdescr[3].title}</p>
+            <p className="pb-2">{gitdescr[3].description}</p>
+            <p className="py-2">{gitdescr[3].challenge}</p>
+            <p className="pt-2">{gitdescr[3].solution}</p>
           </div>
         </div>
       </div>
