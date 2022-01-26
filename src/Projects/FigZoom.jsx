@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import "./Projects.css";
 import figproj0 from "./Pictures/rocketweb.png";
 import figproj1 from "./Pictures/phweb.png";
 import figproj2 from "./Pictures/kanjiapp.png";
@@ -9,7 +8,8 @@ const figprojects = [figproj0, figproj1, figproj2, figproj3];
 
 const figdescr = [
   {
-    title: "Rocko's Rocket Repair",
+    title: "Rocko's Rocket Repair Landing Page",
+    url: "https://www.figma.com/file/tZSKLWCM6vkaenP7fg1L2f/Rocko's-Rocket-Repair-Exp?node-id=0%3A1",
     description:
       "This was my first landing page. I wanted it to be original so a fake company was chosen. I chose pictures for backgrounds and found the font from font awesome.",
     challenge:
@@ -19,6 +19,7 @@ const figdescr = [
   },
   {
     title: "Pale Horse: Satire Writing",
+    url: "https://www.figma.com/file/5hSWMX0KUyPpyJyMs63rXt/Pale-Horse-Project",
     description:
       "The Pale Horse Project was a mock writing site for free lance writers.  It is my first React with CSS Tailwinds project site so I stuck to the basics.",
     challenge:
@@ -28,6 +29,7 @@ const figdescr = [
   },
   {
     title: "Kanji App UX",
+    url: "https://www.figma.com/file/V9Mlr39InKdPlI6Fb1Ab5P/Kanji-app?node-id=0%3A1",
     description:
       "This was a UX design for a Japanese kanji learning app.  It is a work in progress and is yet to be finished.",
     challenge:
@@ -37,6 +39,7 @@ const figdescr = [
   },
   {
     title: "Kanji App UI",
+    url: "https://www.figma.com/file/F8tWbhjwNvA7lwuuJayHsP/Kanji-App-Wireframe?node-id=0%3A1",
     description:
       "This was an attempt at a UI design for the kanji app.  I normally do all my UI on paper but I gave it a try on figma.",
     challenge:
@@ -62,16 +65,19 @@ function Figzoom() {
   return (
     <Fragment>
       <div className="flex flex-col lg:flex-row space-between w-screen">
-        
         <div className="w-full">
-          <div className="pt-8 lg:pt-0 flex justify-center">
-            <img
-              src={figprojects[0]}
-              alt=""
-              onMouseOver={() => displayProject(0)}
-              id="sm-figproj0"
-              className="w-10 m-2 border-2"
-            />
+          <p className="flex justify-center">Click on the small boxes to visit each site.</p>
+          <div className="flex justify-center">
+            <a href={figdescr[0].url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={figprojects[0]}
+                alt=""
+                onMouseOver={() => displayProject(0)}
+                id="sm-figproj0"
+                className="w-10 m-2 border-2"
+              />
+            </a>
+            <a href={figdescr[1].url} target="_blank" rel="noopener noreferrer">
             <img
               src={figprojects[1]}
               alt=""
@@ -79,6 +85,8 @@ function Figzoom() {
               onMouseOver={() => displayProject(1)}
               className="w-10 m-2 border-2"
             />
+            </a>
+            <a href={figdescr[2].url} target="_blank" rel="noopener noreferrer">
             <img
               src={figprojects[2]}
               alt=""
@@ -86,6 +94,8 @@ function Figzoom() {
               onMouseOver={() => displayProject(2)}
               className="w-10 m-2 border-2"
             />
+            </a>
+            <a href={figdescr[3].url} target="_blank" rel="noopener noreferrer">
             <img
               src={figprojects[3]}
               alt=""
@@ -93,6 +103,7 @@ function Figzoom() {
               onMouseOver={() => displayProject(3)}
               className="w-10 m-2 border-2"
             />
+            </a>
           </div>
           <div className="pb-10 flex justify-center items-center">
             <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]">
@@ -123,32 +134,32 @@ function Figzoom() {
             </div>
           </div>
         </div>
-        <div className="text-white px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center lg:w-1/3">
-          <div id="details-figproj0" className="block">
-            <p className="pb-2">{figdescr[0].title}</p>
+        <div className="px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center w-full lg:w-1/3">
+          <div id="details-figproj0" className="block w-2/3">
+            <p className="text-lg underline pb-2">{figdescr[0].title}</p>
             <p className="pb-2">{figdescr[0].description}</p>
             <p className="py-2">{figdescr[0].challenge}</p>
             <p className="pt-2">{figdescr[0].solution}</p>
           </div>
-          <div id="details-figproj1" className="hidden">
-            <p className="pb-2">{figdescr[1].title}</p>
+          <div id="details-figproj1" className="hidden w-2/3">
+            <p className="text-lg underline pb-2">{figdescr[1].title}</p>
             <p className="pb-2">{figdescr[1].description}</p>
             <p className="py-2">{figdescr[1].challenge}</p>
             <p className="pt-2">{figdescr[1].solution}</p>
           </div>
-          <div id="details-figproj2" className="hidden">
-            <p className="pb-2">{figdescr[2].title}</p>
+          <div id="details-figproj2" className="hidden w-2/3">
+            <p className="text-lg underline pb-2">{figdescr[2].title}</p>
             <p className="pb-2">{figdescr[2].description}</p>
             <p className="py-2">{figdescr[2].challenge}</p>
             <p className="pt-2">{figdescr[2].solution}</p>
           </div>
-          <div id="details-figproj3" className="hidden">
-            <p className="pb-2">{figdescr[3].title}</p>
+          <div id="details-figproj3" className="hidden w-2/3">
+            <p className="text-lg underline pb-2">{figdescr[3].title}</p>
             <p className="pb-2">{figdescr[3].description}</p>
             <p className="py-2">{figdescr[3].challenge}</p>
             <p className="pt-2">{figdescr[3].solution}</p>
           </div>
-          </div>
+        </div>
       </div>
     </Fragment>
   );

@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import "./Projects.css";
 import gitproj0 from "./Pictures/rocketweb.png";
 import gitproj1 from "./Pictures/phweb.png";
 import gitproj2 from "./Pictures/passwordapp.png";
@@ -9,7 +8,8 @@ const gitprojects = [gitproj0, gitproj1, gitproj2, gitproj3];
 
 const gitdescr = [
   {
-    title: "Rocko's Rocket Repair",
+    title: "Rocko's Rocket Repair: Modern Landing Page",
+    url: "https://stmidi613.github.io/rocket-repair/",
     description:
       "This was my first landing page. I wanted it to be original so a fake company was chosen. I chose pictures for backgrounds and found the font from font awesome.",
     challenge:
@@ -19,6 +19,7 @@ const gitdescr = [
   },
   {
     title: "Pale Horse: Satire Writing",
+    url: "https://github.com/stmidi613/The-Pale-Horse",
     description:
       "The Pale Horse Project was a mock writing site for free lance writers.  It is my first React with CSS Tailwinds project site so I stuck to the basics.",
     challenge:
@@ -28,6 +29,7 @@ const gitdescr = [
   },
   {
     title: "Password Generator",
+    url: "https://stmidi613.github.io/password-generator/",
     description:
       "This was a vanilla Javascript App to create randomized passwords.",
     challenge:
@@ -37,6 +39,7 @@ const gitdescr = [
   },
   {
     title: "Bingo Card Generator",
+    url: "https://stmidi613.github.io/bingo-card/",
     description:
       "The goal was to use vanilla Javascript to create printable bingo cards for children.  It was inspired by some of the classes I taught as an English teacher.",
     challenge:
@@ -69,35 +72,46 @@ function Figzoom() {
     <Fragment>
       <div className="flex flex-col lg:flex-row space-between w-screen">
         <div className="w-full">
+          <p className="flex justify-center">
+            Click on the small boxes to visit each site.
+          </p>
           <div className="flex justify-center">
-            <img
-              src={gitprojects[0]}
-              alt=""
-              onMouseOver={() => displayProject(0)}
-              id="sm-gitproj0"
-              className="w-10 m-2 border-2"
-            />
-            <img
-              src={gitprojects[1]}
-              alt=""
-              id="sm-gitproj1"
-              onMouseOver={() => displayProject(1)}
-              className="w-10 m-2 border-2"
-            />
+            <a href={gitdescr[0].url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={gitprojects[0]}
+                alt=""
+                onMouseOver={() => displayProject(0)}
+                id="sm-gitproj0"
+                className="w-10 h-8 m-2 border-2"
+              />
+            </a>
+            <a href={gitdescr[1].url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={gitprojects[1]}
+                alt=""
+                id="sm-gitproj1"
+                onMouseOver={() => displayProject(1)}
+                className="w-10 h-8 m-2 border-2"
+              />
+            </a>
+            <a href={gitdescr[2].url} target="_blank" rel="noopener noreferrer">
             <img
               src={gitprojects[2]}
               alt=""
               id="sm-gitproj2"
               onMouseOver={() => displayProject(2)}
-              className="w-10 m-2 border-2"
+              className="w-10 h-8 m-2 border-2"
             />
+            </a>
+            <a href={gitdescr[3].url} target="_blank" rel="noopener noreferrer">
             <img
               src={gitprojects[3]}
               alt=""
               id="sm-gitproj3"
               onMouseOver={() => displayProject(3)}
-              className="w-10 m-2 border-2"
+              className="w-10 h-8 m-2 border-2"
             />
+            </a>
           </div>
           <div className="pb-10 flex justify-center items-center">
             <div
@@ -136,27 +150,27 @@ function Figzoom() {
             </div>
           </div>
         </div>
-        <div className="px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center lg:w-1/3">
-          <div id="details-gitproj0" className="block">
-            <p className="pb-2">{gitdescr[0].title}</p>
+        <div className="px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center w-full lg:w-1/3">
+          <div id="details-gitproj0" className="block w-2/3">
+            <p className="text-lg underline pb-2">{gitdescr[0].title}</p>
             <p className="pb-2">{gitdescr[0].description}</p>
             <p className="py-2">{gitdescr[0].challenge}</p>
             <p className="pt-2">{gitdescr[0].solution}</p>
           </div>
-          <div id="details-gitproj1" className="hidden">
-            <p className="pb-2">{gitdescr[1].title}</p>
+          <div id="details-gitproj1" className="hidden w-2/3">
+            <p className="text-lg underline pb-2">{gitdescr[1].title}</p>
             <p className="pb-2">{gitdescr[1].description}</p>
             <p className="py-2">{gitdescr[1].challenge}</p>
             <p className="pt-2">{gitdescr[1].solution}</p>
           </div>
-          <div id="details-gitproj2" className="hidden">
-            <p className="pb-2">{gitdescr[2].title}</p>
+          <div id="details-gitproj2" className="hidden w-2/3">
+            <p className="text-lg underline pb-2">{gitdescr[2].title}</p>
             <p className="pb-2">{gitdescr[2].description}</p>
             <p className="py-2">{gitdescr[2].challenge}</p>
             <p className="pt-2">{gitdescr[2].solution}</p>
           </div>
-          <div id="details-gitproj3" className="hidden">
-            <p className="pb-2">{gitdescr[3].title}</p>
+          <div id="details-gitproj3" className="hidden w-2/3">
+            <p className="text-lg underline pb-2">{gitdescr[3].title}</p>
             <p className="pb-2">{gitdescr[3].description}</p>
             <p className="py-2">{gitdescr[3].challenge}</p>
             <p className="pt-2">{gitdescr[3].solution}</p>

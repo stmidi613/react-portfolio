@@ -5,7 +5,6 @@ import proj2 from "./Pictures/pamphlet2.png";
 import proj3 from "./Pictures/pamphlet3.png";
 import proj4 from "./Pictures/dragon.png";
 import proj5 from "./Pictures/prayerflyer.png";
-import "./Projects.css";
 
 const projects = [proj0, proj1, proj2, proj3, proj4, proj5];
 

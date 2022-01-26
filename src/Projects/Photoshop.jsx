@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import "./Projects.css";
 import PSZoombox from "./PSZoombox";
 
 function Photoshop() {
