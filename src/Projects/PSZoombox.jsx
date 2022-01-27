@@ -79,7 +79,7 @@ function PSZoombox() {
         <div className="pb-15 flex justify-center items-center">
           <div
             id="widebox"
-            className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
+            className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
           >
             <img
               src={projects[0]}
@@ -108,7 +108,7 @@ function PSZoombox() {
           </div>
           <div
             id="smallbox"
-            className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-8 border-yellow rounded-md h-[425px] w-[300px]"
+            className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-4 border-yellow rounded-md h-[425px] w-[300px]"
           >
             <img
               src={projects[4]}

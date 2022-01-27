@@ -106,7 +106,7 @@ function Figzoom() {
             </a>
           </div>
           <div className="pb-10 flex justify-center items-center">
-            <div className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]">
+            <div className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]">
               <img
                 src={figprojects[0]}
                 alt=""

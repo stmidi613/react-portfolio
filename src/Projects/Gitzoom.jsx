@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import gitproj0 from "./Pictures/rocketweb.png";
+import gitproj0 from "./Pictures/rocketwebsite.png";
 import gitproj1 from "./Pictures/phweb.png";
 import gitproj2 from "./Pictures/passwordapp.png";
 import gitproj3 from "./Pictures/bingoapp.png";
@@ -116,7 +116,7 @@ function Figzoom() {
           <div className="pb-10 flex justify-center items-center">
             <div
               id="git-widebox"
-              className="bg-[#E5E5E5] flex mx-2 border-8 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
+              className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
               <img
                 src={gitprojects[0]}
@@ -133,7 +133,7 @@ function Figzoom() {
             </div>
             <div
               id="git-smallbox"
-              className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-8 border-yellow rounded-md h-[425px] w-[300px]"
+              className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-4 border-yellow rounded-md h-[425px] w-[300px]"
             >
               <img
                 src={gitprojects[2]}
