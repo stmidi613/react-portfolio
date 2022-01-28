@@ -53,11 +53,13 @@ function displayProject(num) {
   for (let i = 0; i <= 3; i++) {
     document.getElementById(`details-figproj${i}`).style.display = "none";
     document.getElementById(`bg-figproj${i}`).style.display = "none";
+    document.getElementById(`bg-figprojlink${i}`).style.display = "none";
     document.getElementById(`sm-figproj${i}`).style.borderColor = "black";
   }
   document.getElementById(`bg-figproj${num}`).style.zIndex = "20";
   document.getElementById(`details-figproj${num}`).style.display = "block";
   document.getElementById(`bg-figproj${num}`).style.display = "flex";
+  document.getElementById(`bg-figprojlink${num}`).style.display = "flex";
   document.getElementById(`sm-figproj${num}`).style.borderColor = "#FFB703";
 }
 
@@ -66,18 +68,17 @@ function Figzoom() {
     <Fragment>
       <div className="flex flex-col lg:flex-row space-between w-screen">
         <div className="w-full">
-          <p className="flex justify-center">Click on the small boxes to visit each site.</p>
+          <p className="flex justify-center">
+            Click on the large pictures to visit each site.
+          </p>
           <div className="flex justify-center">
-            <a href={figdescr[0].url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={figprojects[0]}
-                alt=""
-                onMouseOver={() => displayProject(0)}
-                id="sm-figproj0"
-                className="w-10 m-2 border-2"
-              />
-            </a>
-            <a href={figdescr[1].url} target="_blank" rel="noopener noreferrer">
+            <img
+              src={figprojects[0]}
+              alt=""
+              onMouseOver={() => displayProject(0)}
+              id="sm-figproj0"
+              className="w-10 m-2 border-2"
+            />
             <img
               src={figprojects[1]}
               alt=""
@@ -85,8 +86,6 @@ function Figzoom() {
               onMouseOver={() => displayProject(1)}
               className="w-10 m-2 border-2"
             />
-            </a>
-            <a href={figdescr[2].url} target="_blank" rel="noopener noreferrer">
             <img
               src={figprojects[2]}
               alt=""
@@ -94,8 +93,6 @@ function Figzoom() {
               onMouseOver={() => displayProject(2)}
               className="w-10 m-2 border-2"
             />
-            </a>
-            <a href={figdescr[3].url} target="_blank" rel="noopener noreferrer">
             <img
               src={figprojects[3]}
               alt=""
@@ -103,57 +100,86 @@ function Figzoom() {
               onMouseOver={() => displayProject(3)}
               className="w-10 m-2 border-2"
             />
-            </a>
           </div>
           <div className="pb-10 flex justify-center items-center">
-            <div className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]">
+            <a
+              href={figdescr[0].url}
+              id="bg-figprojlink0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
+            >
               <img
                 src={figprojects[0]}
                 alt=""
                 id="bg-figproj0"
                 className="z-10 w-full"
               />
+            </a>
+            <a
+              href={figdescr[1].url}
+              id="bg-figprojlink1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
+            >
               <img
                 src={figprojects[1]}
                 alt=""
                 id="bg-figproj1"
                 className="hidden relative w-full z-10"
               />
+            </a>
+            <a
+              href={figdescr[2].url}
+              id="bg-figprojlink2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
+            >
               <img
                 src={figprojects[2]}
                 alt=""
                 id="bg-figproj2"
                 className="hidden relative w-full"
               />
+            </a>
+            <a
+              href={figdescr[3].url}
+              id="bg-figprojlink3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
+            >
               <img
                 src={figprojects[3]}
                 alt=""
                 id="bg-figproj3"
                 className="hidden relative w-full"
               />
-            </div>
+            </a>
           </div>
         </div>
         <div className="px-8 lg:px-0 lg:pr-16 pb-10 flex flex-col justify-center items-center w-full lg:w-1/3">
-          <div id="details-figproj0" className="block w-2/3">
+          <div id="details-figproj0" className="block w-2/3 lg:w-full">
             <p className="text-lg underline pb-2">{figdescr[0].title}</p>
             <p className="pb-2">{figdescr[0].description}</p>
             <p className="py-2">{figdescr[0].challenge}</p>
             <p className="pt-2">{figdescr[0].solution}</p>
           </div>
-          <div id="details-figproj1" className="hidden w-2/3">
+          <div id="details-figproj1" className="hidden w-2/3 lg:w-full">
             <p className="text-lg underline pb-2">{figdescr[1].title}</p>
             <p className="pb-2">{figdescr[1].description}</p>
             <p className="py-2">{figdescr[1].challenge}</p>
             <p className="pt-2">{figdescr[1].solution}</p>
           </div>
-          <div id="details-figproj2" className="hidden w-2/3">
+          <div id="details-figproj2" className="hidden w-2/3 lg:w-full">
             <p className="text-lg underline pb-2">{figdescr[2].title}</p>
             <p className="pb-2">{figdescr[2].description}</p>
             <p className="py-2">{figdescr[2].challenge}</p>
             <p className="pt-2">{figdescr[2].solution}</p>
           </div>
-          <div id="details-figproj3" className="hidden w-2/3">
+          <div id="details-figproj3" className="hidden w-2/3 lg:w-full">
             <p className="text-lg underline pb-2">{figdescr[3].title}</p>
             <p className="pb-2">{figdescr[3].description}</p>
             <p className="py-2">{figdescr[3].challenge}</p>

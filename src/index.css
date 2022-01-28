@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 .active{
     border-bottom: 2px solid;
+}
+
+.allura{
+    font-family: "Allura";
 }

@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import PSZoombox from "./PSZoombox";
+import '../index.css';
 
 function Photoshop() {
   return (
     <Fragment>
       <div className="bg-lightblue md:pt-10">
-        <h1 className="text-3xl md:text-5xl text-yellow text-center p-5 md:p-10">
+        <h1 className="allura text-5xl text-yellow text-center p-5 md:p-10">
           Photoshop
         </h1>
         <div className="flex flex-row">

@@ -38,42 +38,42 @@ function PSZoombox() {
             alt=""
             onMouseOver={() => displayProject(0)}
             id="sm-proj0"
-            className="w-10 m-2 border-2"
+            className="w-10 h-10 m-2 border-2"
           />
           <img
             src={projects[1]}
             alt=""
             id="sm-proj1"
             onMouseOver={() => displayProject(1)}
-            className="w-10 m-2 border-2"
+            className="w-10 h-10 m-2 border-2"
           />
           <img
             src={projects[2]}
             alt=""
             id="sm-proj2"
             onMouseOver={() => displayProject(2)}
-            className="w-10 m-2 border-2"
+            className="w-10 h-10 m-2 border-2"
           />
           <img
             src={projects[3]}
             alt=""
             id="sm-proj3"
             onMouseOver={() => displayProject(3)}
-            className="w-10 m-2 border-2"
+            className="w-10 h-10 m-2 border-2"
           />
           <img
             src={projects[4]}
             alt=""
             id="sm-proj4"
             onMouseOver={() => displayProject(4)}
-            className="w-10 m-2 border-2 proj5"
+            className="w-10 h-10 m-2 border-2 proj5"
           />
           <img
             src={projects[5]}
             alt=""
             id="sm-proj5"
             onMouseOver={() => displayProject(5)}
-            className="w-10 m-2 border-2 proj6"
+            className="w-10 h-10 m-2 border-2 proj6"
           />
         </div>
         <div className="pb-15 flex justify-center items-center">

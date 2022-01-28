@@ -8,7 +8,8 @@ module.exports = {
       "lightblue": "#D2F1FF",
       "yellow": "#FFB703",
       "gold": "#F98300",
-      "white": "#fff"
+      "white": "#fff",
+      "gray": "#5D576B"
     },
   },
   plugins: [],

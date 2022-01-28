@@ -18,9 +18,9 @@ function Contact() {
           target="_blank"
           className="flex flex-col justify-center items-center"
         >
-          <div style="position: absolute; left: -5000px;">
+          {/* <div style="position: absolute; left: -5000px;">
             <input type="checkbox" name="energetic_cyan_striped_table" value="1" tabIndex="-1" autocomplete="no">
-          </div>
+          </div> */}
           <div>
             <label htmlFor="name" className="mt-20 block text-sm font-medium">
               Name
