@@ -10,3 +10,14 @@
 .allura{
     font-family: "Allura";
 }
+
+@media (max-width: 500px) {
+    .picflex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .piccenter{
+        justify-content: center;
+        margin: auto;
+    }
+}

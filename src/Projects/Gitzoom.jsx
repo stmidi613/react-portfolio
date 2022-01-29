@@ -3,6 +3,8 @@ import gitproj0 from "./Pictures/rocketwebsite.png";
 import gitproj1 from "./Pictures/phweb.png";
 import gitproj2 from "./Pictures/passwordapp.png";
 import gitproj3 from "./Pictures/bingoapp.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 const gitprojects = [gitproj0, gitproj1, gitproj2, gitproj3];
 
@@ -107,6 +109,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-yellow z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={gitprojects[0]}
                 alt=""
@@ -121,6 +128,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-yellow z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={gitprojects[1]}
                 alt=""
@@ -135,6 +147,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-4 border-yellow rounded-md h-[425px] w-[300px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-gray z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={gitprojects[2]}
                 alt=""
@@ -149,6 +166,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] relative hidden justify-center mx-2 border-4 border-yellow rounded-md h-[425px] w-[300px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-gray z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={gitprojects[3]}
                 alt=""

@@ -3,6 +3,8 @@ import figproj0 from "./Pictures/rocketweb.png";
 import figproj1 from "./Pictures/phweb.png";
 import figproj2 from "./Pictures/kanjiapp.png";
 import figproj3 from "./Pictures/kanjiappui.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 const figprojects = [figproj0, figproj1, figproj2, figproj3];
 
@@ -109,6 +111,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] flex mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-yellow z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={figprojects[0]}
                 alt=""
@@ -123,6 +130,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-yellow z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={figprojects[1]}
                 alt=""
@@ -137,6 +149,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-yellow z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={figprojects[2]}
                 alt=""
@@ -151,6 +168,11 @@ function Figzoom() {
               rel="noopener noreferrer"
               className="bg-[#E5E5E5] hidden mx-2 border-4 border-yellow rounded-md h-[215] sm:h-[425px] w-full sm:w-[650px]"
             >
+              <FontAwesomeIcon
+                icon={faExternalLinkAlt}
+                className="absolute text-yellow z-30"
+                viewBox="-40 -40 300 300"
+              />
               <img
                 src={figprojects[3]}
                 alt=""

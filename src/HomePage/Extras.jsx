@@ -4,11 +4,11 @@ import '../index.css';
 function Extras() {
   return (
     <Fragment>
-        <div className="flex">
+        <div className="flex wrap">
           <div className="mr-12">
-            <h2 className="allura mt-2 text-yellow text-3xl sm:text-5xl mb-4 ml-6">Skills</h2>
+            <h2 className="allura pt-2 text-yellow text-3xl sm:text-5xl mb-4 sm:ml-6">Skills</h2>
 
-            <ol className="text-sm sm:text-xl ml-9">
+            <ol className="text-sm sm:text-xl sm:ml-9">
               <li>• HTML 5</li>
               <li>• CSS3</li>
               <li>• GIT</li>

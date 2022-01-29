@@ -17,18 +17,18 @@
 
 @keyframes names {
   0% {
-    top: 40%;
+    top: 35%;
     left: -80px;
     font-style: italic;
   }
   50% {
-    top: 40%;
+    top: 35%;
     left: 33%;
     font-style: normal;
   }
   100% {
     position: relative;
-    top: 40%;
+    top: 35%;
     left: 33%;
     font-weight: bold;
     color: #ffb703;
