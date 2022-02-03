@@ -120,7 +120,7 @@ function Figzoom() {
                 src={figprojects[0]}
                 alt=""
                 id="bg-figproj0"
-                className="z-10 w-full"
+                className="z-10 w-full hover:drop-shadow-picshadow"
               />
             </a>
             <a
@@ -139,7 +139,7 @@ function Figzoom() {
                 src={figprojects[1]}
                 alt=""
                 id="bg-figproj1"
-                className="hidden relative w-full z-10"
+                className="hidden relative w-full z-10 hover:drop-shadow-picshadow"
               />
             </a>
             <a
@@ -158,7 +158,7 @@ function Figzoom() {
                 src={figprojects[2]}
                 alt=""
                 id="bg-figproj2"
-                className="hidden relative w-full"
+                className="hidden relative w-full hover:drop-shadow-picshadow"
               />
             </a>
             <a
@@ -177,7 +177,7 @@ function Figzoom() {
                 src={figprojects[3]}
                 alt=""
                 id="bg-figproj3"
-                className="hidden relative w-full"
+                className="hidden relative w-full hover:drop-shadow-picshadow"
               />
             </a>
           </div>

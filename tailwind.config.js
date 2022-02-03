@@ -11,6 +11,9 @@ module.exports = {
       "white": "#fff",
       "gray": "#5D576B"
     },
+    dropShadow: {
+      "picshadow": "0px 0px 15px #FFB703"
+    },
   },
   plugins: [],
 }
