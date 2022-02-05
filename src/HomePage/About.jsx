@@ -6,7 +6,7 @@ import Extras from "./Extras";
 function About() {
   return (
     <Fragment>
-      <div className="bg-lightblue h-[650px] lg:h-[500px] flex flex-wrap flex-col sm:flex-row justify-around items-center p-4">
+      <div className="bg-lightblue h-[650px] lg:h-[550px] flex flex-wrap flex-col sm:flex-row justify-around items-center p-4">
         <div className="flex picflex">
           <img
             src={about}
@@ -14,7 +14,7 @@ function About() {
             className="piccenter my-4 ml-10 w-32 md:max-w-96"
           />
           <div className="max-w-sm">
-            <h2 className="allura text-3xl sm:text-5xl text-yellow mt-8 ml-12">About Me</h2>
+            <h2 className="allura text-3xl sm:text-5xl text-yellow ml-12">About Me</h2>
             <p className="m-2 text-xs md:text-sm">
               Hello, my name is Stephen Dilks. In late December of 2020, I
               decided to learn to code and began my new exciting journey in
