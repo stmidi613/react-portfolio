@@ -66,7 +66,7 @@ function Contact() {
             />
             <button
               type="submit"
-              className="bg-white border-2 rounded-md px-2 py-1 mb-20 hover:drop-shadow-lg"
+              className="bg-white border-2 rounded-md px-2 py-1 mb-20 hover:shadow-lg"
             >
               Submit
             </button>
