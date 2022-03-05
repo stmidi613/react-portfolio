@@ -1,18 +1,26 @@
-#background-animation{
-    animation: background-animation 4s ease-in 1ms 1 normal forwards;
+#background-animation {
+  background: linear-gradient(
+    88.18deg,
+    #000000 -1.58%,
+    #02030c 21.54%,
+    #fdff8f 31.22%
+  );
+  background-size: 375% 100%;
+  background-position: left bottom;
+  animation: background-animation 4s ease 1ms 1 normal forwards;
 }
 
 @keyframes background-animation {
-    0%{
-        background: #D2F1FF;
-    }
-    100%{
-      background: conic-gradient(from 45.75deg at 14.32% -33.81%, #FDFFB4 0deg, #D2F1FF 360deg);
-    }
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 40% 100%;
+  }
 }
 
 #name-animation {
-  animation: names 5s ease-in-out 1ms 1 normal forwards;
+  animation: names 3s ease-in-out 1ms 1 normal forwards;
 }
 
 @keyframes names {
@@ -23,30 +31,30 @@
   }
   50% {
     top: 35%;
-    left: 33%;
+    left: 35%;
     font-style: normal;
   }
   100% {
     position: relative;
     top: 35%;
-    left: 33%;
+    left: 35%;
     font-weight: bold;
     color: #ffb703;
   }
 }
 
 #text-animation {
-  animation: text-animation 5s ease-in-out 1ms 1 normal forwards;
+  animation: text-animation 3s ease-in-out 1ms 1 normal forwards;
 }
 
 @keyframes text-animation {
-    0%{
-        top: 170px;
-        opacity: 3%;
-    }
-    100%{
-        top: 90px;
-        opacity: 100%;
-        color: #ffb703;
-    }
+  0% {
+    top: 170px;
+    opacity: 3%;
+  }
+  100% {
+    top: 90px;
+    opacity: 100%;
+    color: #ffb703;
+  }
 }
