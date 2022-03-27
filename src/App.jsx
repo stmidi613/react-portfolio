@@ -1,12 +1,12 @@
 import "./index.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import HomePage from "./HomePage/HomePage";
 import Contact from "./Contact/Contact";
 import Resumes from "./Resume/Resumes";
 import Projects from "./Projects/Projects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NoMatchPage from "./NoMatchPage";
+import NoMatchPage from "./Components/NoMatchPage";
 
 function App() {
   return (

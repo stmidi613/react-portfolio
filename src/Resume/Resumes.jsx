@@ -9,17 +9,17 @@ import Japanese2 from "./Pictures/Japanese2.png";
 function Resumes() {
   return (
     <Fragment>
-      <div>
-        <div className="pt-5">
+      <main>
+        <section className="pt-5">
           <img src={English1} alt="" />
           <img src={English2} alt="" />
           <img src={English3} alt="" />
-        </div>
-        <div>
+        </section>
+        <section className="pt-5">
           <img src={Japanese1} alt="" />
           <img src={Japanese2} alt="" />
-        </div>
-      </div>
+        </section>
+      </main>
     </Fragment>
   );
 }

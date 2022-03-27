@@ -4,10 +4,12 @@ import Gitzoom from "./Gitzoom";
 function Github() {
   return (
     <Fragment>
-      <div className="bg-lightblue">
-        <h1 className="allura text-5xl text-yellow text-center p-10">Github</h1>
+      <section aria-labelledby="github-title" className="bg-lightblue">
+        <h2 id="github-title" className="allura text-5xl text-yellow text-center p-10">
+          Github
+        </h2>
         <Gitzoom />
-      </div>
+      </section>
     </Fragment>
   );
 }

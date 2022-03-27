@@ -1,8 +1,8 @@
 import React from "react";
-import "./index.css";
-import phone from "./Pictures/phone.png";
-import mail from "./Pictures/mail.png";
-import linkedin from "./Pictures/linkedin.png";
+import "../index.css";
+import phone from "../Pictures/phone.png";
+import mail from "../Pictures/mail.png";
+import linkedin from "../Pictures/linkedin.png";
 
 function Footer() {
   return (

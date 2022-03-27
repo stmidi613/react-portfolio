@@ -5,10 +5,12 @@ import '../index.css'
 function Figma() {
   return (
     <Fragment>
-      <div className="bg-midblue">
-        <h1 className="allura text-gray text-5xl md:text-5xl text-center p-10">Figma</h1>
+      <section aria-labelledby="figma-title" className="bg-midblue">
+        <h2 id="figma-title" className="allura text-gray text-5xl md:text-5xl text-center p-10">
+          Figma
+        </h2>
           <Figzoom />
-      </div>
+      </section>
     </Fragment>
   );
 }
