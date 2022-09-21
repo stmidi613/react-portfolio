@@ -1,4 +1,6 @@
 import React, { Fragment } from "react";
+
+import WebApps from "./WebApps";
 import Photoshop from "./Photoshop";
 import Figma from "./Figma";
 import Github from "./Github";
@@ -6,9 +8,10 @@ import Github from "./Github";
 function Projects() {
   return (
     <Fragment>
-      <Photoshop />
-      <Figma />
+      <WebApps />
       <Github />
+      <Figma />
+      <Photoshop />
     </Fragment>
   );
 }

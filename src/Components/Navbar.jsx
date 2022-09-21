@@ -55,7 +55,6 @@ function Navbar() {
                       <NavLink
                       key={item.name}
                       to={item.href}
-                      className="active"
                       className={classNames(
                         item.current
                         ? "text-lightblue hover:text-yellow"

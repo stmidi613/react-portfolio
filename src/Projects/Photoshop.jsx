@@ -5,7 +5,7 @@ import '../index.css';
 function Photoshop() {
   return (
     <Fragment>
-      <section aria-labelledby="ps-title" className="bg-lightblue md:pt-10">
+      <section aria-labelledby="ps-title" className="bg-lightblue">
         <h2 id="ps-title" className="allura text-5xl text-yellow text-center p-5 md:p-10">
           Photoshop
         </h2>

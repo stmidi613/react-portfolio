@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
+
 import gitproj0 from "./Pictures/rocketwebsite.png";
 import gitproj1 from "./Pictures/phweb.png";
 import gitproj2 from "./Pictures/passwordapp.png";
 import gitproj3 from "./Pictures/bingoapp.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
