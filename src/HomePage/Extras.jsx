@@ -12,7 +12,7 @@ function Extras() {
               <li>• HTML 5</li>
               <li>• CSS3</li>
               <li>• GIT</li>
-              <li>• Translation</li>
+              <li>• Typescript</li>
               <li>• PhotoShop</li>
               <li>• Javascript</li>
               <li>• WordPress</li>
@@ -24,7 +24,6 @@ function Extras() {
             <h3 id="goals-title" className="allura mt-4 text-3xl sm:text-5xl text-yellow mb-4 m-6">Future Goals</h3>
 
             <ol className="w-full flex flex-col flex-wrap text-sm sm:text-xl mx-7">
-              <li>• TypeScript</li>
               <li>• React Native</li>
               <li>• GraphQL</li>
               <li>• Python</li>

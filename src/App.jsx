@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import HomePage from "./HomePage/HomePage";
 import Contact from "./Contact/Contact";
-import Resumes from "./Resume/Resumes";
+// import Resumes from "./Resume/Resumes";
 import Projects from "./Projects/Projects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoMatchPage from "./Components/NoMatchPage";
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/resumes" element={<Resumes />} />
+        {/* <Route path="/resumes" element={<Resumes />} /> */}
         <Route path="*" element={<NoMatchPage />} />
       </Routes>
       <Footer />
