@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import figproj0 from "./Pictures/rocketweb.png";
 import figproj1 from "./Pictures/phweb.png";
 import figproj2 from "./Pictures/kanjiapp.png";
-import figproj3 from "./Pictures/kanjiappui.png";
+import figproj3 from "./Pictures/yahooclone.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -40,14 +40,14 @@ const figdescr = [
       "Solution: I had to use buttons and maximize space by reducing area around the separate fields and buttons.",
   },
   {
-    title: "Kanji App UI",
-    url: "https://www.figma.com/file/F8tWbhjwNvA7lwuuJayHsP/Kanji-App-Wireframe?node-id=0%3A1",
+    title: "Yahoo Clone",
+    url: "https://www.figma.com/file/4rvGXO6Y6FQtyKby1AqAn0/YahooClone?node-id=0%3A1",
     description:
-      "This was an attempt at a UI design for the kanji app.  I normally do all my UI on paper but I gave it a try on figma.",
+      "I cloned the Yahoo home page and its features.",
     challenge:
-      "Challenge: Ensuring that all the items were included by not making it a UX project.",
+      "Challenge: Making sure everything was either pixel perfect or close to it.",
     solution:
-      "Solution: I did not concentrate on colors or backgrounds just the flow of the project.",
+      "Solution: I had to use my FireFox web tools to make sure all the colors and proportions matched.",
   },
 ];
 
